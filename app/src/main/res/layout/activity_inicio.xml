@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -9,50 +10,44 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="305dp"
-        android:layout_height="29dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:shadowColor="#0D0C0C"
         android:text="@string/p1t1"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtnombre"
-        android:layout_width="287dp"
-        android:layout_height="51dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:elegantTextHeight="true"
-        android:ems="10"
         android:inputType="text"
-        android:onClick="btnclick"
-        android:shadowColor="#948D8D"
-        android:text="@string/p1h1"
-        android:textColor="#898383"
+        android:hint="@string/p1h1"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:padding="8dp" />
 
     <Button
         android:id="@+id/btnenvia"
-        android:layout_width="238dp"
-        android:layout_height="59dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:onClick="btnclick"
         android:shadowColor="#FFFFFF"
         android:text="@string/p1bt1"
         android:textColor="#FFFFFF"
-        android:textColorHighlight="#FAFAFA"
-        android:textColorHint="@color/white"
-        android:textColorLink="@color/purple_200"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtnombre"
+        app:layout_constraintTop_toBottomOf="@id/txtnombre"
         app:rippleColor="#FFFFFF"
-        app:strokeColor="#FFFDFD" />
+        android:padding="10dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

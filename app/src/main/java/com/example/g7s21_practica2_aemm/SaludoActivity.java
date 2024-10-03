@@ -19,13 +19,11 @@ public class SaludoActivity extends AppCompatActivity {
 
         lblsaludo = findViewById(R.id.lblsaludo);
 
+        // Obtiene los parámetros de la intención y establece un valor predeterminado.
         Bundle parametros = getIntent().getExtras();
-        if (parametros != null) {
-            nombre = parametros.getString("nombre", "Invitado"); // Valor por defecto
-        } else {
-            nombre = "Invitado"; // Valor por defecto
-        }
+        nombre = (parametros != null) ? parametros.getString("nombre", "Invitado") : "Invitado";
 
-        lblsaludo.setText("Bienvenido, " + nombre);
+        // Establece el texto en el TextView.
+        lblsaludo.setText(String.format("Bienvenido, %s", nombre));
     }
 }
