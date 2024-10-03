@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">g7s21_practica2_AEMM</string>
-    <string name="p1t1">Bienvenido. ingresa tu nombre</string>
-    <string name="p1h1">Aqui tu nombre</string>
-    <string name="p1bt1">Enviar saludo </string>
-    <string name="lblsaludo"> </string>
+    <string name="p1t1">Bienvenido, ingresa tu nombre:</string>
+    <string name="p1h1">Aquí tu nombre</string>
+    <string name="p1bt1">Enviar saludo</string>
+    <string name="lblsaludo">¡Hola, %1$s! Bienvenido a la aplicación.</string>
 </resources>
